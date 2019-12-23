@@ -16,23 +16,12 @@
 
 `cp .Xresources ~/` (needed colorcheme for menu)
 
-* copy files needed for fingerprint gui:
-
-`sudo cp -R  etc/pam.d/** /etc/pam.d`
-
 
 # install needed apps and programms for i3 and fingerprint-sensor
 
 `sudo pacman -S --needed - < packages-repository.txt`
 
 `yay -S --needed - < packages-AUR.txt`
-
-# Give users rights to use the fingerprint-sensor:
-* ad user to this groups **scanner plugdev**: (replace 'username' with your users name)
-
-`sudo gpasswd -a username scanner`
-
-`sudo gpasswd -a username plugdev`
 
 # Tutorial for i3-wm settings:
 
@@ -62,10 +51,6 @@ so each new window will open fullscreen as a tab, you can change between window-
 ![alt text](https://raw.githubusercontent.com/killajoe/i3-EndeavourOS/master/appmenu.png "application-menu")
 
 
-#
-
-# setup Fingerprint-GUI to get your fingerprints:
-https://wiki.archlinux.org/index.php/Fingerprint_GUI
 
 # Thermald/TLP POWERSAVING:
 
@@ -88,9 +73,7 @@ services e.t.c.:
 `sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket`
 
 reboot... 
-#
-![alt text](https://raw.githubusercontent.com/killajoe/i3-EndeavourOS/master/greeter.png "slick-greeter")
-#
+
 ![alt text](https://raw.githubusercontent.com/killajoe/i3-EndeavourOS/master/2019-09-08-223630_1024x768_scrot.png "i3-running")
 
-login to i3... with a fingertip
+login to i3... 
