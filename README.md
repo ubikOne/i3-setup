@@ -17,7 +17,7 @@
 `cp .Xresources ~/` (needed colorcheme for menu)
 
 
-# install needed apps and programms for i3 and fingerprint-sensor
+# install needed apps and programms for i3wm:
 
 `sudo pacman -S --needed - < packages-repository.txt`
 
