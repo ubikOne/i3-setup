@@ -1,9 +1,8 @@
 # i3-EndeavourOS
 ## joekamprad: setup for i3 under [EndeavourOS](https://endeavouros.com)
-## setup for i3-Wm on EndeavourOS running on a thinkpad with fingerprint reader:
 
 * get my dot files
-* copy files to the right directories (.config of your user and pam files under /etc/pam.d {needed for fingerprint-gui to work}):
+* copy files to the right directories (.config of your user):
 * scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
 
 `git clone https://github.com/killajoe/i3-EndeavourOS.git`
