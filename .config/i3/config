@@ -245,7 +245,7 @@ bindsym $mod+F8 exec mocp --next
 
 # App shortcuts
 bindsym $mod+w exec "/usr/bin/firefox"
-bindsym $mod+n exec "/usr/bin/thunar"
+bindsym $mod+n exec "/usr/bin/pcmanfm"
 bindsym Print exec "xfce4-screenshooter"
 
 # Redirect sound to headphones
@@ -258,10 +258,9 @@ bindsym F12 exec rofi -show window -lines 7
 
 # Autostart apps
 exec --no-startup-id "xset s 480 dpms 600 600 600"
-exec --no-startup-id light-locker
 
-exec --no-startup-id "compton -cC"
+exec --no-startup-id "picom -cC"
 exec --no-startup-id nm-applet
 exec --no-startup-id "nitrogen --restore"
 exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
-exec --no-startup-id sleep 15 && kalu
+exec --no-startup-id sleep 15 && eos-update-notifier
