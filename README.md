@@ -9,7 +9,7 @@
 
 `cd i3-EndeavourOS`
 
-`cp -R .config/ ~/.config/`
+`cp -R .config/* ~/.config/`
 
 `chmod -R +x ~/.config/i3/scripts` (make scripts executable)
 
