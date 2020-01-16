@@ -20,8 +20,6 @@
 
 `sudo pacman -S --needed - < packages-repository.txt`
 
-`yay -S --needed - < packages-AUR.txt`
-
 # Tutorial for i3-wm settings:
 
 Main shortcuts:
