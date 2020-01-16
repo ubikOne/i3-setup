@@ -16,7 +16,7 @@ pulseaudio
 paprefs
 pavucontrol
 scrot
-compton
+picom
 leafpad
 pcmanfm
 polkit-gnome
