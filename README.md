@@ -5,7 +5,7 @@
 * copy files to the right directories (.config of your user):
 * scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
 
-`git clone https://github.com/killajoe/i3-EndeavourOS.git`
+`git clone https://github.com/endeavouros-team/i3-EndeavourOS.git`
 
 `cd i3-EndeavourOS`
 
