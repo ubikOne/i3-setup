@@ -24,10 +24,11 @@
 
 Main shortcuts:
 
-* [mod]+**enter** = open terminal (xfce4-terminal)
+* [mod]+**enter** = open terminal (terminator)
 * [mod]+**w** =  open Browser (firefox)
+* [mod]+**n** =  open Filebrowser (PCmanfm)
 * **F9** =  app menu (rofi)
-* **F4** =  close focused app
+* **F4** =  close focused app [kill]
 
 # Tiling mode is tabbed: 
 so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
@@ -36,41 +37,20 @@ so each new window will open fullscreen as a tab, you can change between window-
 
 # i3blocks:
 * pulseaudio (mousewheel volume level, rightclick open pulseaudio control)
-* weather (openweather)
-* tray-icons (showing kalu and network-manager)
+* weather (openweather you need to get city cod eand apikey first [adding it to ~/.config/i3/scripts/openweather.sh])
+* tray-icons (showing network-manager and update-icon)
 * logout button (poweroff, logout, suspending, hibernate e.t.c.)
 #
-![alt text](https://raw.githubusercontent.com/killajoe/i3-EndeavourOS/master/panel.png "i3blocks")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/bar.png "i3blocks")
 #
-![alt text](https://raw.githubusercontent.com/killajoe/i3-EndeavourOS/master/logoutmenu.png "logout-menu")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/logoutmenu.png "logout-menu")
 
-# application menu:
-![alt text](https://raw.githubusercontent.com/killajoe/i3-EndeavourOS/master/appmenu.png "application-menu")
+# F9 application menu:
+![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/menu.png "application-menu")
 
 
 
-# Thermald/TLP POWERSAVING:
 
-install needed: `yay -S --needed tlp thermald`
-
-`sudo nano /usr/lib/systemd/system/thermald.service`
-
-change the line:
-
-`ExecStart=/usr/bin/thermald --no-daemon --dbus-enable`
-
-like so:
-
-`ExecStart=/usr/bin/thermald --no-daemon --dbus-enable --ignore-cpuid-check`
-
-services e.t.c.:
-
-`sudo systemctl enable thermald tlp.service tlp-sleep.service`
-
-`sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket`
-
-reboot... 
-
-![alt text](https://raw.githubusercontent.com/killajoe/i3-EndeavourOS/master/2019-09-08-223630_1024x768_scrot.png "i3-running")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/screenshot.png "i3-running")
 
 login to i3... 
