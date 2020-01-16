@@ -22,3 +22,5 @@ pcmanfm
 polkit-gnome
 jq
 feh
+lxappearance-gtk3
+terminator
