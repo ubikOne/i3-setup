@@ -40,16 +40,13 @@ so each new window will open fullscreen as a tab, you can change between window-
 * weather (openweather you need to get city cod eand apikey first [adding it to ~/.config/i3/scripts/openweather.sh])
 * tray-icons (showing network-manager and update-icon)
 * logout button (poweroff, logout, suspending, hibernate e.t.c.)
-#
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/bar.png "i3blocks")
-#
+
+# Logout Menu:
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/logoutmenu.png "logout-menu")
 
 # F9 application menu:
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/menu.png "application-menu")
-
-
-
 
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/screenshot.png "i3-running")
 
