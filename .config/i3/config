@@ -18,7 +18,7 @@ workspace_layout tabbed
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Droid Sans Regular 9
+font pango:Droid Sans Regular 8
 
 # thin borders
 hide_edge_borders both
@@ -96,10 +96,35 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+#workspace-edit
+set $ws2 "Terminals "
+set $ws3 "Browser "
+set $ws4 "Dateien "
+
+#autostart start applications
+#bind program to workspace
+assign [class="Terminator"] $ws2
+assign [class="firefox"] $ws3
+assign [class="Pcmanfm"] $ws4
+
+# Autostart apps
+exec --no-startup-id sleep 5 && firefox
+exec --no-startup-id sleep 6 && terminator
+exec --no-startup-id sleep 7 && pcmanfm
+exec --no-startup-id picom -cC
+exec --no-startup-id nm-applet
+exec --no-startup-id nitrogen --restore
+#save packages lists:
+exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
+#set powersavings for display:
+exec --no-startup-id xset s 480 dpms 600 600 600
+exec --no-startup-id sleep 15 && eos-update-notifier
+
 # switch to workspace
-bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+
 
 
 # move focused container to workspace
@@ -200,31 +225,6 @@ for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Pamac-manager"] floating enable
-
-#workspace-edit
-set $ws1 "Terminals "
-set $ws2 "Browser "
-set $ws3 "Dateien "
-
-#autostart start applications
-#bind program to workspace
-assign [class="Terminator"] $ws1
-assign [class="Firefox"] $ws2
-assign [class="Pcmanfm"] $ws3
-
-# Autostart apps
-exec --no-startup-id "firefox"
-exec --no-startup-id "terminator"
-exec --no-startup-id "pcmanfm"
-exec --no-startup-id "picom -cC"
-exec --no-startup-id nm-applet
-exec --no-startup-id "nitrogen --restore"
-#save packages lists:
-exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
-#set powersavings for display:
-exec --no-startup-id "xset s 480 dpms 600 600 600"
-exec --no-startup-id sleep 15 && eos-update-notifier
-
 
 # Multimedia Keys
 
