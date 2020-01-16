@@ -8,9 +8,7 @@ i3blocks
 i3lock
 i3status
 menumaker
-rhythmbox
 rofi
-telegram-desktop
 wifi-radar
 xcursor-neutral
 archlinux-xdg-menu
