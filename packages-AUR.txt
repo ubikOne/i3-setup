@@ -1,3 +1,0 @@
-lightdm-settings
-lightdm-slick-greeter
-maint
