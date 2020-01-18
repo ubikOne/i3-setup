@@ -47,12 +47,12 @@ so each new window will open fullscreen as a tab, you can change between window-
 * [mod]+**Right** focus right (right arrow key)
 
 # i3blocks:
+![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/bar.png "i3blocks")
 * pulseaudio (mousewheel volume level, rightclick open pulseaudio control)
 * weather (openweather you need to get city code and apikey first [adding it to ~/.config/i3/scripts/openweather.sh])
 get your api key here: https://openweathermap.org/appid and City code: https://openweathermap.org/find?q= (search your city     and take the city code from the url in your browser [7 numbers at the end of the url])
 * tray-icons (showing network-manager and update-icon)
 * logout button (poweroff, logout, suspending, hibernate e.t.c.)
-![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/bar.png "i3blocks")
 
 # Logout Menu:
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/logoutmenu.png "logout-menu")
