@@ -1,9 +1,10 @@
 # i3-EndeavourOS
 ## joekamprad: setup for i3 under [EndeavourOS](https://endeavouros.com)
 
-* get my dot files
-* copy files to the right directories (.config of your user):
-* scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
+1. get the dot files
+2. copy files to the right directories (.config of your user):
+3. copy scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
+4. install needed packages
 
 `git clone https://github.com/endeavouros-team/i3-EndeavourOS.git`
 
