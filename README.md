@@ -21,7 +21,10 @@
 `sudo pacman -S --needed - < packages-repository.txt`
 
 # Tutorial for i3-wm settings:
-
+* background handled by [nitrogen](https://wiki.archlinux.org/index.php/nitrogen)
+* gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
+* Filebrowser = [PCManFM](https://wiki.lxde.org/de/PCManFM)
+* default Terminal emulator = [Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)
 Main shortcuts:
 
 * [mod]+**enter** = open terminal (terminator)
@@ -29,6 +32,10 @@ Main shortcuts:
 * [mod]+**n** =  open Filebrowser (PCmanfm)
 * **F9** =  app menu (rofi)
 * **F4** =  close focused app [kill]
+* **Print**-key = screenshot
+
+# default i3-wm keycodes: 
+https://i3wm.org/docs/userguide.html#_default_keybindings
 
 # Tiling mode is tabbed: 
 so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
@@ -37,7 +44,8 @@ so each new window will open fullscreen as a tab, you can change between window-
 
 # i3blocks:
 * pulseaudio (mousewheel volume level, rightclick open pulseaudio control)
-* weather (openweather you need to get city cod eand apikey first [adding it to ~/.config/i3/scripts/openweather.sh])
+* weather (openweather you need to get city code and apikey first [adding it to ~/.config/i3/scripts/openweather.sh])
+get your api key here: https://openweathermap.org/appid and City code: https://openweathermap.org/find?q= (search your city     and take the city code from the url in your browser [7 numbers at the end of the url])
 * tray-icons (showing network-manager and update-icon)
 * logout button (poweroff, logout, suspending, hibernate e.t.c.)
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/bar.png "i3blocks")
