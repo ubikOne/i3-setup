@@ -26,7 +26,7 @@
 * Filebrowser = [PCManFM](https://wiki.lxde.org/de/PCManFM)
 * default Terminal emulator = [Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)
 
-#Main shortcuts:
+# Main shortcuts:
 * [mod]+**enter** = open terminal (terminator)
 * [mod]+**w** =  open Browser (firefox)
 * [mod]+**n** =  open Filebrowser (PCmanfm)
