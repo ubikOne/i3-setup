@@ -28,7 +28,9 @@
 
 # Main shortcuts:
 mod key is set to the winkey (or should i call it linkey?)
+
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/linkey.png "linkey")
+
 * [mod]+**enter** = open terminal (terminator)
 * [mod]+**w** =  open Browser (firefox)
 * [mod]+**n** =  open Filebrowser (PCmanfm)
