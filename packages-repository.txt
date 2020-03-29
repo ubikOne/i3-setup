@@ -9,7 +9,6 @@ i3lock
 i3status
 menumaker
 rofi
-wifi-radar
 xcursor-neutral
 archlinux-xdg-menu
 pulseaudio
