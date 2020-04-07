@@ -11,7 +11,9 @@
 
 set $mod Mod4
 
-#workspace layout
+# workspace layout
+#workspace_layout default
+#workspace_layout stacking
 workspace_layout tabbed
 
 #get auth work with polkit-gnome
@@ -114,7 +116,7 @@ exec --no-startup-id sleep 7 && pcmanfm
 exec --no-startup-id picom -cC
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
-#save packages lists:
+#backup packages lists:
 exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
 #set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
