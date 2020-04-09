@@ -120,15 +120,23 @@ exec --no-startup-id nitrogen --restore
 exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
 #set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
+# Desktop notifications
+exec --no-startup-id /usr/bin/dunst
 # update notification should be set to tray and notification
-#exec --no-startup-id sleep 15 && eos-update-notifier
+exec --no-startup-id sleep 15 && eos-update-notifier
+exec --no-startup-id sleep 15 && eos-welcome
+
+# set floating for apps needing it
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
+# welcome and others
+for_window [class="Yad" instance="yad"] floating enable
+for_window [class="Galculator" instance="galculator"] floating enable
+for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 
 # switch to workspace
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
-
-
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
