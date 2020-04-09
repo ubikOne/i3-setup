@@ -1,5 +1,8 @@
-$mod = windows key
+EndeavourOS i3wm Keybindings cheat sheet:
+--> to update this run the following command:
+`wget https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/.config/i3/keybindings -P ~/.config/i3/keybindings`
 
+$mod = windows key
 
 --> Use Mouse+$mod to drag floating windows to their wanted position
 Mouse+$mod
