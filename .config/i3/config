@@ -132,6 +132,7 @@ for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+for_window [class="Leafpad" instance="leafpad"] floating enable
 
 # switch to workspace
 bindsym $mod+2 workspace $ws2
