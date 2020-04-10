@@ -12,9 +12,15 @@
 set $mod Mod4
 
 # workspace layout
-workspace_layout default
+#workspace_layout default
 #workspace_layout stacking
-#workspace_layout tabbed
+workspace_layout tabbed
+#Tiling mode is tabbed:
+#so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
+#
+#    [mod]+Left focus left (left arrow key)
+#    [mod]+Right focus right (right arrow key)
+
 
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
