@@ -11,9 +11,13 @@
 
 set $mod Mod4
 
-# workspace layout
+# workspace layouts:
+
 #workspace_layout default
+#default i3 tiling mode
+
 #workspace_layout stacking
+
 workspace_layout tabbed
 #Tiling mode is tabbed:
 #so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
