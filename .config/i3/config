@@ -22,7 +22,7 @@ set $mod Mod4
 
 #workspace_layout stacking
 
-workspace_layout tabbed
+#workspace_layout tabbed
 #Tiling mode is tabbed:
 #so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
 #
