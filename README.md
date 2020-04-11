@@ -49,8 +49,8 @@ Only the focused window in the container is displayed. You get a list of windows
 
 * tabbed:
 so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
-* [mod]+**Left** focus left (left arrow key)
-* [mod]+**Right** focus right (right arrow key)
+[mod]+**Left** focus left (left arrow key)
+[mod]+**Right** focus right (right arrow key)
 
 # i3blocks:
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/bar.png "i3blocks")
