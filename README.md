@@ -42,7 +42,12 @@
 # default i3-wm keycodes: 
 https://i3wm.org/docs/userguide.html#_default_keybindings
 
-# Tiling mode is tabbed: 
+# Tiling:
+is set to default for i3wm and can be changed to: 
+* stacking:
+Only the focused window in the container is displayed. You get a list of windows at the top of the container.
+
+* tabbed:
 so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
 * [mod]+**Left** focus left (left arrow key)
 * [mod]+**Right** focus right (right arrow key)
