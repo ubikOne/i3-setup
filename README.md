@@ -66,6 +66,6 @@ get your api key here: https://openweathermap.org/appid and City code: https://o
 # F9 application menu:
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/menu.png "application-menu")
 
-![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/screenshot.png "i3-running")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/endeavouros-i3-screenshot.png "i3-running")
 
 login to i3... 
