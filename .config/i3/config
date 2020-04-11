@@ -4,6 +4,10 @@
 # Maintainer: joekamprad [joekamprad@endeavouros.com]
 # created for i3wm setup on EndeavourOS
 # https://endeavouros.com
+#
+# --> to update this run the following command:
+# wget --backups=1 https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/.config/i3/config -P ~/.config/i3/
+
 
 # i3 config file
 #
