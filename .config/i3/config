@@ -114,7 +114,7 @@ bindsym $mod+a focus parent
 
 #workspace-edit
 set $ws2 "Terminals "
-set $ws3 "Browser "
+set $ws3 "Browser "
 set $ws4 "Files "
 
 #autostart start applications
