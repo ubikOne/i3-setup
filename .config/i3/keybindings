@@ -18,12 +18,12 @@ Mouse+$mod
 $mod+Return
 
 --> kill focused window (exit / terminate)
-F4
+$mod+Shift+x
 
 $mod+enter --> open terminal (terminator)
 $mod+w --> open Browser (firefox)
 $mod+n --> open Filebrowser (PCmanfm)
-F9 --> app menu (rofi -- nice menu)
+$mod --> app menu (rofi -- nice menu)
 Print-key --> screenshot
 
 --> start dmenu (a program launcher)
@@ -53,6 +53,11 @@ $mod+Shift+k --> move down
 $mod+Shift+l --> move up
 $mod+Shift+ntilde --> move right
 
+--> resize floating windows with mouse scroll:
+$mod+button4 resize shrink height
+$mod+button5 resize grow height
+$mod+shift+button4 resize shrink width
+$mod+shift+button5 resize grow width
 
  -->  split in horizontal orientation
 $mod+h  --> split h
