@@ -128,7 +128,7 @@ for_window [class=Pcmanfm] focus
 
 # Autostart apps
 exec --no-startup-id sleep 1 && firefox
-exec --no-startup-id sleep 2 && terminator
+exec --no-startup-id sleep 2 && xfce4-terminal -e "glances --percpu"
 exec --no-startup-id sleep 3 && pcmanfm
 exec --no-startup-id picom -cC
 exec --no-startup-id nm-applet
