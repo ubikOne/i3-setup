@@ -151,6 +151,12 @@ for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Leafpad" instance="leafpad"] floating enable
 
+#resize floating windows with mouse scroll:
+bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
+bindsym --whole-window --border $mod+button5 resize grow height 5 px or 5 ppt
+bindsym --whole-window --border $mod+shift+button4 resize shrink width 5 px or 5 ppt
+bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 ppt
+
 # switch to workspace
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
