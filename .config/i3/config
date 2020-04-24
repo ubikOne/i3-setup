@@ -119,8 +119,8 @@ set $ws4 "Files "
 
 #autostart start applications
 #bind program to workspace
-assign [class="Terminator"] $ws2
-for_window [class=Terminator] focus
+assign [class="Xfce4-terminal"] $ws2
+for_window [class=Xfce4-terminal] focus
 assign [class="(?i)firefox"] $ws3
 for_window [class=(?i)firefox] focus
 assign [class="Pcmanfm"] $ws4
