@@ -19,6 +19,8 @@ $mod+Return
 
 --> kill focused window (exit / terminate)
 $mod+Shift+x
+---> open keybindings overview
+$mod+F1
 
 $mod+enter --> open terminal (terminator)
 $mod+w --> open Browser (firefox)
