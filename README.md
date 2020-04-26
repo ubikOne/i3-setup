@@ -63,7 +63,7 @@ get your api key here: https://openweathermap.org/appid and City code: https://o
 # Logout Menu:
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/logoutmenu.png "logout-menu")
 * CONFIG FILE = ~/.config/i3/i3blocks.conf
-# F9 application menu (rofi):
+# application menu (rofi):
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/menu.png "application-menu")
 * color scheme = ~/.Xresources
 
