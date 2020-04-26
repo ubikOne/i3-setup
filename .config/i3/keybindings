@@ -26,6 +26,7 @@ $mod+enter --> open terminal (terminator)
 $mod+w --> open Browser (firefox)
 $mod+n --> open Filebrowser (PCmanfm)
 $mod --> app menu (rofi -- nice menu)
+$mod+o --> chooe open windows over menu (rofi -- nice menu)
 Print-key --> screenshot
 
 --> start dmenu (a program launcher)
