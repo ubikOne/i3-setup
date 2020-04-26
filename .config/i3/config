@@ -2,7 +2,6 @@
 # source is available here:
 # https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/.config/i3/config
 # Maintainer: joekamprad [joekamprad@endeavouros.com]
-# created for i3wm setup on EndeavourOS
 # https://endeavouros.com
 #
 # --> to update this run the following command:
@@ -149,7 +148,7 @@ for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
-for_window [class="Leafpad" instance="leafpad"] floating enable
+#for_window [class="Leafpad" instance="leafpad"] floating enable
 
 #resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
