@@ -62,9 +62,14 @@ get your api key here: https://openweathermap.org/appid and City code: https://o
 
 # Logout Menu:
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/logoutmenu.png "logout-menu")
-
-# F9 application menu:
+* CONFIG FILE = ~/.config/i3/i3blocks.conf
+# F9 application menu (rofi):
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/menu.png "application-menu")
+* color scheme = ~/.Xresources
+
+# Notifications are done with dunst:
+![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/dunst-i3-enOS.png "dunst-notification")
+* CONFIG FILE = ~/.config/dunst/dunstrc
 
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/endeavouros-i3-screenshot.png "i3-running")
 
