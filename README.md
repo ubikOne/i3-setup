@@ -25,18 +25,18 @@
 * background handled by [nitrogen](https://wiki.archlinux.org/index.php/nitrogen)
 * gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
 * Filebrowser = [PCManFM](https://wiki.lxde.org/de/PCManFM)
-* default Terminal emulator = [Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)
+* default Terminal emulator = [xfce4-terminal](https://docs.xfce.org/apps/terminal/start)
 
 # Main shortcuts:
 [mod] key is set to the winkey (or should i call it linkey?)
 
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/linkey.png "linkey")
 
-* [mod]+**enter** = open terminal (terminator)
+* [mod]+**enter** = open terminal (xfce4-terminal)
 * [mod]+**w** =  open Browser (firefox)
 * [mod]+**n** =  open Filebrowser (PCmanfm)
 * **F9** =  app menu (rofi)
-* **F4** =  close focused app [kill]
+* **$mod+Shift+x** =  close focused app [kill]
 * **Print**-key = screenshot
 
 # default i3-wm keycodes: 
@@ -53,7 +53,7 @@ so each new window will open fullscreen as a tab, you can change between window-
 [mod]+**Right** focus right (right arrow key)
 
 # i3blocks:
-![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/bar.png "i3blocks")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/bar.png "i3blocks")
 * pulseaudio (mousewheel volume level, rightclick open pulseaudio control)
 * weather (openweather you need to get city code and apikey first [adding it to ~/.config/i3/scripts/openweather.sh])
 get your api key here: https://openweathermap.org/appid and City code: https://openweathermap.org/find?q= (search your city     and take the city code from the url in your browser [7 numbers at the end of the url])
@@ -61,11 +61,11 @@ get your api key here: https://openweathermap.org/appid and City code: https://o
 * logout button (poweroff, logout, suspending, hibernate e.t.c.)
 
 # Logout Menu:
-![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/logoutmenu.png "logout-menu")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/logoutmenu.png "logout-menu")
 
 # F9 application menu:
-![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/menu.png "application-menu")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/menu.png "application-menu")
 
-![alt text](https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/endeavouros-i3-screenshot.png "i3-running")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/endeavouros-i3-screenshot.png "i3-running")
 
 login to i3... 
