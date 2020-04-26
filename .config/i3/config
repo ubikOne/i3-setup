@@ -129,7 +129,7 @@ assign [class="Pcmanfm"] $ws4
 for_window [class=Pcmanfm] focus
 
 # Autostart apps
-exec --no-startup-id sleep 1 && firefox
+exec --no-startup-id firefox https://github.com/endeavouros-team/i3-EndeavourOS/blob/master/README.md
 exec --no-startup-id sleep 2 && xfce4-terminal -e "glances --percpu"
 exec --no-startup-id sleep 3 && pcmanfm
 exec --no-startup-id picom -cC
