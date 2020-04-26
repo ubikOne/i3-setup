@@ -135,23 +135,27 @@ exec --no-startup-id sleep 3 && pcmanfm
 exec --no-startup-id picom -cC
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
-#backup packages lists:
-exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
+
 #set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
+
 # Desktop notifications
 exec --no-startup-id /usr/bin/dunst
+
 # update notification should be set to tray and notification
 exec --no-startup-id sleep 15 && eos-update-notifier
 exec --no-startup-id sleep 15 && eos-welcome
 
 # set floating for apps needing it
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
-# welcome and others
+## welcome and others
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
-#for_window [class="Leafpad" instance="leafpad"] floating enable
+for_window [class="Leafpad" instance="leafpad"] floating enable
+for_window [class="Leafpad"] resize set 640 480
+
+
 
 #resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
