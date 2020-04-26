@@ -54,6 +54,8 @@ bindsym $mod+Return exec xfce4-terminal
 # kill focused window
 bindsym $mod+Shift+x kill
 
+# open keybindings overview
+bindsym F1 exec "leafpad ~/.config/i3/keybindings"
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
