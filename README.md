@@ -30,7 +30,7 @@
 # Main shortcuts:
 [mod] key is set to the winkey (or should i call it linkey?)
 
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/linkey.png "linkey")
+![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/linkey.png "modkey")
 
 * [mod]+**enter** = open terminal (xfce4-terminal)
 * [mod]+**w** =  open Browser (firefox)
