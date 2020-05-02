@@ -125,13 +125,13 @@ assign [class="Xfce4-terminal"] $ws2
 for_window [class=Xfce4-terminal] focus
 assign [class="(?i)firefox"] $ws3
 for_window [class=(?i)firefox] focus
-assign [class="Pcmanfm"] $ws4
-for_window [class=Pcmanfm] focus
+assign [class="Thunar"] $ws4
+for_window [class=Thunar] focus
 
 # Autostart apps
 exec --no-startup-id firefox https://github.com/endeavouros-team/i3-EndeavourOS/blob/master/README.md
 exec --no-startup-id sleep 2 && xfce4-terminal -e "glances --percpu"
-exec --no-startup-id sleep 3 && pcmanfm
+exec --no-startup-id sleep 3 && thunar
 exec --no-startup-id picom -cC
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
@@ -298,7 +298,7 @@ bindsym $mod+F8 exec mocp --next
 
 # App shortcuts
 bindsym $mod+w exec "/usr/bin/firefox"
-bindsym $mod+n exec "/usr/bin/pcmanfm"
+bindsym $mod+n exec "/usr/bin/thunar"
 bindsym Print exec "scrot ~/%Y-%m-%d-%T-screenshot.png"
 
 # Redirect sound to headphones
