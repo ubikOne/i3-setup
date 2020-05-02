@@ -18,7 +18,7 @@ Mouse+$mod
 $mod+Return
 
 --> kill focused window (exit / terminate)
-$mod+Shift+x
+$mod+c
 
 ---> open keybindings overview
 $mod+F1
@@ -26,8 +26,8 @@ $mod+F1
 $mod+enter --> open terminal (terminator)
 $mod+w --> open Browser (firefox)
 $mod+n --> open Filebrowser (PCmanfm)
-$mod+i --> app menu (rofi -- nice menu)
-$mod+o --> chooe open windows over menu (rofi -- nice menu)
+$mod+i // F9 --> app menu (rofi -- nice menu)
+$mod+o // F10 --> chooe open windows over menu (rofi -- nice menu)
 Print-key --> screenshot
 
 --> start dmenu (a program launcher)
