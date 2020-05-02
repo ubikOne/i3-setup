@@ -129,7 +129,7 @@ assign [class="Thunar"] $ws4
 for_window [class=Thunar] focus
 
 # Autostart apps
-exec --no-startup-id firefox https://github.com/endeavouros-team/i3-EndeavourOS/blob/master/README.md
+exec --no-startup-id firefox
 exec --no-startup-id sleep 2 && xfce4-terminal -e "glances --percpu"
 exec --no-startup-id sleep 3 && thunar
 exec --no-startup-id picom -cC
@@ -141,6 +141,7 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 
 # Desktop notifications
 exec --no-startup-id /usr/bin/dunst
+exec --no-startup-id git clone https://github.com/endeavouros-team/i3-EndeavourOS.git ~/.config/i3/original/
 
 # update notification should be set to tray and notification
 exec --no-startup-id sleep 15 && eos-update-notifier
