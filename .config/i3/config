@@ -16,7 +16,7 @@ set $mod Mod4
 
 # workspace layouts:
 
-#workspace_layout default
+workspace_layout default
 #default i3 tiling mode
 
 #workspace_layout stacking
