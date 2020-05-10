@@ -16,7 +16,7 @@ set $mod Mod4
 
 # workspace layouts:
 
-#workspace_layout default
+workspace_layout default
 #default i3 tiling mode
 
 #workspace_layout stacking
@@ -52,10 +52,11 @@ floating_modifier $mod
 bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
-bindsym $mod+Shift+x kill
+bindsym $mod+c kill
 
 # open keybindings overview
-bindsym F1 exec "leafpad ~/.config/i3/keybindings"
+bindsym $mod+F1 exec "leafpad ~/.config/i3/keybindings"
+
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -124,33 +125,38 @@ assign [class="Xfce4-terminal"] $ws2
 for_window [class=Xfce4-terminal] focus
 assign [class="(?i)firefox"] $ws3
 for_window [class=(?i)firefox] focus
-assign [class="Pcmanfm"] $ws4
-for_window [class=Pcmanfm] focus
+assign [class="Thunar"] $ws4
+for_window [class=Thunar] focus
 
 # Autostart apps
-exec --no-startup-id sleep 1 && firefox
+exec --no-startup-id firefox
 exec --no-startup-id sleep 2 && xfce4-terminal -e "glances --percpu"
-exec --no-startup-id sleep 3 && pcmanfm
+exec --no-startup-id sleep 3 && thunar
 exec --no-startup-id picom -cC
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
-#backup packages lists:
-exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
+
 #set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
+
 # Desktop notifications
 exec --no-startup-id /usr/bin/dunst
+exec --no-startup-id git clone https://github.com/endeavouros-team/i3-EndeavourOS.git ~/.config/i3/original/
+
 # update notification should be set to tray and notification
 exec --no-startup-id sleep 15 && eos-update-notifier
 exec --no-startup-id sleep 15 && eos-welcome
 
 # set floating for apps needing it
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
-# welcome and others
+## welcome and others
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
-#for_window [class="Leafpad" instance="leafpad"] floating enable
+for_window [class="Leafpad" instance="leafpad"] floating enable
+for_window [class="Leafpad"] resize set 900 700
+
+
 
 #resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
@@ -293,7 +299,7 @@ bindsym $mod+F8 exec mocp --next
 
 # App shortcuts
 bindsym $mod+w exec "/usr/bin/firefox"
-bindsym $mod+n exec "/usr/bin/pcmanfm"
+bindsym $mod+n exec "/usr/bin/thunar"
 bindsym Print exec "scrot ~/%Y-%m-%d-%T-screenshot.png"
 
 # Redirect sound to headphones
@@ -309,12 +315,19 @@ bindsym $mod+l exec i3lock -i ~/.config/i3/i3-lock-screen.png -t -f
 
 
 # rofi bindings fancy menu
+bindsym $mod+i exec rofi -modi drun -show drun -line-padding 4 \
+                -columns 2 -padding 50 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
+                
 bindsym F9 exec rofi -modi drun -show drun -line-padding 4 \
                 -columns 2 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
 
-bindsym F10 exec rofi -show window -line-padding 4 \
+bindsym $mod+o exec rofi -show window -line-padding 4 \
                 -lines 6 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
 
-
+bindsym F10 exec rofi -show window -line-padding 4 \
+                -lines 6 -padding 50 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"                
+                
