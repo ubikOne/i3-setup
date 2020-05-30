@@ -132,7 +132,10 @@ for_window [class=Thunar] focus
 exec --no-startup-id firefox
 exec --no-startup-id sleep 2 && xfce4-terminal -e "glances --percpu"
 exec --no-startup-id sleep 3 && thunar
-exec --no-startup-id picom -cC
+#transparency 
+exec --no-startup-id xcompmgr -c -f -n
+#exec --no-startup-id picom -cC
+#networkmanager-applet
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
 
@@ -153,8 +156,8 @@ for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
-for_window [class="Leafpad" instance="leafpad"] floating enable
-for_window [class="Leafpad"] resize set 900 700
+#for_window [class="Leafpad" instance="leafpad"] floating enable
+#for_window [class="Leafpad"] resize set 900 700
 
 
 
@@ -331,3 +334,5 @@ bindsym F10 exec rofi -show window -line-padding 4 \
                 -lines 6 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"                
                 
+
+
