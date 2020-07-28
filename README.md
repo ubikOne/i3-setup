@@ -24,7 +24,7 @@
 # Tutorial for i3-wm settings:
 * background handled by [nitrogen](https://wiki.archlinux.org/index.php/nitrogen)
 * gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
-* Filebrowser = [PCManFM](https://wiki.lxde.org/de/PCManFM)
+* Filebrowser = [Thunar](https://docs.xfce.org/xfce/thunar/start)
 * default Terminal emulator = [xfce4-terminal](https://docs.xfce.org/apps/terminal/start)
 
 # Main shortcuts:
@@ -34,7 +34,7 @@
 
 * [mod]+**enter** = open terminal (xfce4-terminal)
 * [mod]+**w** =  open Browser (firefox)
-* [mod]+**n** =  open Filebrowser (PCmanfm)
+* [mod]+**n** =  open Filebrowser (thunar)
 * **F9** =  app menu (rofi)
 * **$mod+Shift+x** =  close focused app [kill]
 * **Print**-key = screenshot
