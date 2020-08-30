@@ -29,7 +29,7 @@ paprefs
 pavucontrol
 scrot
 xcompmgr
-leafpad
+xed
 jq
 feh
 dunst
