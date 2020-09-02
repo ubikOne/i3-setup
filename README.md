@@ -26,6 +26,7 @@
 * gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
 * Filebrowser = [Thunar](https://docs.xfce.org/xfce/thunar/start)
 * default Terminal emulator = [xfce4-terminal](https://docs.xfce.org/apps/terminal/start)
+* Text editor is changed to [xed](https://github.com/linuxmint/xed)
 
 # Main shortcuts:
 [mod] key is set to the winkey (or should i call it linkey?)
