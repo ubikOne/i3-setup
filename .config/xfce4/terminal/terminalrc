@@ -1,5 +1,5 @@
 [Configuration]
-BackgroundDarkness=0.920000
+BackgroundDarkness=0.860000
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=FALSE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
@@ -27,7 +27,7 @@ MiscCopyOnSelect=FALSE
 MiscShowRelaunchDialog=TRUE
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
-MiscSlimTabs=FALSE
+MiscSlimTabs=TRUE
 MiscNewTabAdjacent=FALSE
 ColorForeground=#e3e3ea
 ColorBackground=#08052b
@@ -38,4 +38,7 @@ ColorBold=#7fbaff
 TabActivityColor=#47B35D
 ColorCursorUseDefault=FALSE
 ColorBoldIsBright=FALSE
-ColorSelectionUseDefault=TRUE
+ScrollingUnlimited=TRUE
+TitleMode=TERMINAL_TITLE_REPLACE
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
+TextBlinkMode=TERMINAL_TEXT_BLINK_MODE_FOCUSED
