@@ -37,7 +37,7 @@
 * [mod]+**w** =  open Browser (firefox)
 * [mod]+**n** =  open Filebrowser (thunar)
 * **F9** =  app menu (rofi)
-* **$mod+Shift+x** =  close focused app [kill]
+* **$mod+c** =  close focused app [kill]
 * **Print**-key = screenshot
 
 # default i3-wm keycodes: 
