@@ -29,6 +29,7 @@ paprefs
 pavucontrol
 scrot
 xcompmgr
+picom
 xed
 jq
 feh
