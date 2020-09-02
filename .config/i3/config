@@ -115,9 +115,9 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 #workspace-edit
-set $ws2 "Terminals "
-set $ws3 "Browser "
-set $ws4 "Files "
+set $ws2 ""
+set $ws3 ""
+set $ws4 ""
 
 #autostart start applications
 #bind program to workspace
@@ -132,6 +132,7 @@ for_window [class=Thunar] focus
 exec --no-startup-id sleep 2 && xfce4-terminal
 #exec --no-startup-id firefox
 #exec --no-startup-id sleep 3 && thunar
+exec --no-startup-id blueberry-tray
 
 #transparency 
 exec --no-startup-id xcompmgr -c
@@ -153,7 +154,7 @@ exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id git clone https://github.com/endeavouros-team/i3-EndeavourOS.git ~/.config/i3/original/
 
 # update notification should be set to tray and notification
-exec --no-startup-id sleep 15 && eos-update-notifier
+#exec --no-startup-id sleep 15 && eos-update-notifier
 exec --no-startup-id sleep 15 && eos-welcome
 
 # set floating (nontiling)for apps needing it
@@ -333,5 +334,4 @@ bindsym F10 exec rofi -show window -line-padding 4 \
                 -lines 6 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"                
                 
-
 
