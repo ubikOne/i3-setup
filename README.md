@@ -63,7 +63,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 ----
 
 # Tutorial to install EndeavourOS-i3 setup from scratch 
-**(for later installs if you hav einstalle danother DE on initial install from the ISO)**
+**for later installs, if you have installed another DE on initial install from the ISO**
 
 1. get the dot files
 2. copy files to the right directories (.config of your user):
