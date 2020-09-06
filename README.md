@@ -1,26 +1,6 @@
 # i3-EndeavourOS
 ## joekamprad: setup for i3 under [EndeavourOS](https://endeavouros.com)
 
-1. get the dot files
-2. copy files to the right directories (.config of your user):
-3. copy scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
-4. install needed packages
-
-`git clone https://github.com/endeavouros-team/i3-EndeavourOS.git`
-
-`cd i3-EndeavourOS`
-
-`cp -R .config/* ~/.config/`
-
-`chmod -R +x ~/.config/i3/scripts` (make scripts executable)
-
-`cp .Xresources ~/` (needed colorcheme for menu)
-
-
-# install needed apps and programms for i3wm:
-
-`sudo pacman -S --needed - < packages-repository.txt`
-
 # Tutorial for i3-wm settings:
 * background handled by [nitrogen](https://wiki.archlinux.org/index.php/nitrogen)
 * gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
@@ -75,3 +55,31 @@ get your api key here: https://openweathermap.org/appid and City code: https://o
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/endeavouros-i3-screenshot.png "i3-running")
 
 login to i3... 
+
+# If you need to change something to fit your needs start at the full wiki at EndeavourOS wiki page:
+
+![alt text](https://endeavouros.com/docs/window-tiling-managers/i3-wm/ "full i3-wm WIKI")
+
+----
+
+# Tutorial to install EndeavourOS-i3 setup from scratch (for later installs if you hav einstalle danother DE on initial install from the ISO)
+
+1. get the dot files
+2. copy files to the right directories (.config of your user):
+3. copy scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
+4. install needed packages
+
+`git clone https://github.com/endeavouros-team/i3-EndeavourOS.git`
+
+`cd i3-EndeavourOS`
+
+`cp -R .config/* ~/.config/`
+
+`chmod -R +x ~/.config/i3/scripts` (make scripts executable)
+
+`cp .Xresources ~/` (needed colorcheme for menu)
+
+# install needed apps and programms for i3wm:
+
+`sudo pacman -S --needed - < packages-repository.txt`
+
