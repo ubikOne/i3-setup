@@ -54,15 +54,16 @@ get your api key here: https://openweathermap.org/appid and City code: https://o
 
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/endeavouros-i3-screenshot.png "i3-running")
 
-login to i3... 
+login to i3.
 
 # If you need to change something to fit your needs start at the full wiki at EndeavourOS wiki page:
 
-![alt text](https://endeavouros.com/docs/window-tiling-managers/i3-wm/ "full i3-wm WIKI")
+https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 ----
 
-# Tutorial to install EndeavourOS-i3 setup from scratch (for later installs if you hav einstalle danother DE on initial install from the ISO)
+# Tutorial to install EndeavourOS-i3 setup from scratch 
+**(for later installs if you hav einstalle danother DE on initial install from the ISO)**
 
 1. get the dot files
 2. copy files to the right directories (.config of your user):
