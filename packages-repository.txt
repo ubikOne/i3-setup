@@ -7,18 +7,13 @@ arandr
 archlinux-xdg-menu
 lxappearance-gtk3
 otf-font-awesome
-dmenu
 polkit-gnome
 xdg-user-dirs-gtk
-thunar
-thunar-archive-plugin
 file-roller
-thunar-volman
 tumbler
 xfce4-terminal
 lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+lightdm-slick-greeter
 acpi
 sysstat
 nitrogen
@@ -29,7 +24,6 @@ pulseaudio
 paprefs
 pavucontrol
 scrot
-xcompmgr
 picom
 xed
 jq
@@ -39,3 +33,7 @@ arc-x-icons-theme
 arc-gtk-theme
 galculator
 gtk-engine-murrine
+alacritty
+emacs-nox
+neovim
+networkmanager
