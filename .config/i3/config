@@ -170,8 +170,8 @@ set $ws10 "10"
 exec --no-startup-id blueberry-tray
 
 #transparency 
-#exec --no-startup-id xcompmgr -c
-exec --no-startup-id picom -dcC
+exec --no-startup-id xcompmgr -c
+#exec --no-startup-id picom -cC
 
 #networkmanager-applet
 exec --no-startup-id nm-applet
@@ -244,7 +244,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+q exec ~/.config/i3/scripts/shutdown_menu
 
 
 # resize window (you can also use the mouse for that)
@@ -425,3 +426,6 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+exec --no-startup-id ~/.screenlayout/main.sh 
+exec --no-startup-id flameshot 
