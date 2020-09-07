@@ -46,3 +46,4 @@ bmon
 bashtop
 flameshot
 pcmanfm
+visual-studio-code-bin
