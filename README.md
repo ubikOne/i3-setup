@@ -82,5 +82,5 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 # install needed apps and programms for i3wm:
 
-`sudo pacman -S --needed - < packages-repository.txt`
+`yay -S --needed - < packages-repository.txt`
 

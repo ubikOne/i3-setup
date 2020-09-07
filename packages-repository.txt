@@ -13,7 +13,8 @@ file-roller
 tumbler
 xfce4-terminal
 lightdm
-lightdm-slick-greeter
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 acpi
 sysstat
 nitrogen
@@ -40,3 +41,8 @@ networkmanager
 nerd-fonts-fira-code
 bat
 networkmanager
+thunderbird
+bmon
+bashtop
+flameshot
+pcmanfm
