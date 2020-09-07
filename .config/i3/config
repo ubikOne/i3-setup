@@ -51,20 +51,41 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+c kill
 
 # open keybindings overview
-bindsym $mod+F1 exec "leafpad ~/.config/i3/keybindings"
+#bindsym $mod+F1 exec "leafpad ~/.config/i3/keybindings"
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# rofi bindings fancy application menu
+bindsym $mod+d exec rofi -modi drun -show drun -line-padding 4 \
+                -columns 2 -padding 50 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
+                
+#bindsym F9 exec rofi -modi drun -show drun -line-padding 4 \
+#                -columns 2 -padding 50 -hide-scrollbar \
+#                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
+
+bindsym $mod+o exec rofi -show window -line-padding 4 \
+                -lines 6 -padding 50 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
+
+#bindsym F10 exec rofi -show window -line-padding 4 \
+#                -lines 6 -padding 50 -hide-scrollbar \
+#                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"   
+
+bindsym $mod+s exec rofi -show ssh -line-padding 4 \
+                -lines 6 -padding 50 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
 
 # change focus
 bindsym $mod+j focus left
@@ -116,29 +137,34 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 #workspace-edit
-set $ws2 ""
-set $ws3 ""
-set $ws4 ""
-set $ws5 ""
-set $ws6 ""
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 bindsym $mod+s exec --no-startup-id ~/.config/i3/scripts/empty_workspace.sh
 
 #autostart start applications
 #bind program to workspace
-assign [class="Xfce4-terminal"] $ws2
-for_window [class=Xfce4-terminal] focus
-assign [class="(?i)firefox"] $ws3
-for_window [class=(?i)firefox] focus
-assign [class="Thunar"] $ws4
-for_window [class=Thunar] focus
-assign [class="Thunderbird"] $ws5
-for_window [class=Thunderbird] focus
-assign [class="TelegramDesktop"] $ws6
-for_window [class=TelegramDesktop] focus
+#assign [class="Xfce4-terminal"] $ws2
+#for_window [class=Xfce4-terminal] focus
+#assign [class="(?i)firefox"] $ws3
+#for_window [class=(?i)firefox] focus
+#assign [class="Thunar"] $ws4
+#for_window [class=Thunar] focus
+#assign [class="Thunderbird"] $ws5
+#for_window [class=Thunderbird] focus
+#assign [class="TelegramDesktop"] $ws6
+#for_window [class=TelegramDesktop] focus
 
 # Autostart apps
-exec --no-startup-id sleep 2 && xfce4-terminal
+#exec --no-startup-id sleep 2 && xfce4-terminal
 #exec --no-startup-id firefox
 #exec --no-startup-id sleep 3 && thunar
 exec --no-startup-id blueberry-tray
@@ -188,9 +214,16 @@ bindsym --whole-window --border $mod+shift+button4 resize shrink width 5 px or 5
 bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 ppt
 
 # switch to workspace
+bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+2 move container to workspace $ws2
@@ -326,21 +359,6 @@ bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
 bindsym $mod+l exec i3lock -i ~/.config/i3/i3-lock-screen.png -t -f
 
 
-# rofi bindings fancy application menu
-bindsym $mod+i exec rofi -modi drun -show drun -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
-                
-bindsym F9 exec rofi -modi drun -show drun -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
-
-bindsym $mod+o exec rofi -show window -line-padding 4 \
-                -lines 6 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
-
-bindsym F10 exec rofi -show window -line-padding 4 \
-                -lines 6 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"                
+             
                 
 
