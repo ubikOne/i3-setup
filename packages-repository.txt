@@ -36,6 +36,10 @@ gtk-engine-murrine
 alacritty
 emacs-nox
 neovim
+<<<<<<< HEAD
 networkmanager
 nerd-fonts-fira-code
 bat
+=======
+networkmanager
+>>>>>>> 7aab24d339414467cada05b7eb2c32069f45423b
