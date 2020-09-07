@@ -70,7 +70,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 3. copy scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
 4. install needed packages
 
-`git clone https://github.com/endeavouros-team/i3-EndeavourOS.git`
+`git clone https://github.com/ubikOne/i3-setup.git`
 
 `cd i3-EndeavourOS`
 
