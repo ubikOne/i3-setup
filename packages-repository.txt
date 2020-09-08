@@ -11,8 +11,11 @@ polkit-gnome
 xdg-user-dirs-gtk
 file-roller
 tumbler
+thunar
+thunar-volman
 xfce4-terminal
 lightdm
+lightdm-ebkit2-greeter
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 acpi
@@ -45,5 +48,5 @@ thunderbird
 bmon
 bashtop
 flameshot
-pcmanfm
 visual-studio-code-bin
+polybar-git
