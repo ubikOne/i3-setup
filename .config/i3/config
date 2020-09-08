@@ -309,7 +309,7 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color       
 # finds out, if available)
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf 
-    position bottom
+    position top
     colors {
       separator          #666666
         background         #222222
@@ -427,5 +427,5 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec --no-startup-id ~/.screenlayout/main.sh 
+#exec --no-startup-id ~/.screenlayout/main.sh 
 exec --no-startup-id flameshot 

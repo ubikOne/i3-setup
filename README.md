@@ -84,3 +84,11 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `yay -S --needed --nocorfim - < packages-repository.txt`
 
+# bashrc config
+
+`mv ~/.bashrc ~/.bashrc_old`
+`sudo mv /root/.bashrc /root/.bashrc_old`
+
+`ln -s ~/.config/bash/bashrc ~/.bashrc`
+`sudo ln -s $HOME/.config/bash/bashrc /root/.bashrc`
+
