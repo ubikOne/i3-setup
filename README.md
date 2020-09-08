@@ -72,7 +72,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `git clone https://github.com/ubikOne/i3-setup.git`
 
-`cd i3-EndeavourOS`
+`cd i3-setup`
 
 `cp -R .config/* ~/.config/`
 
@@ -82,5 +82,5 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 # install needed apps and programms for i3wm:
 
-`yay -S --needed - < packages-repository.txt`
+`yay -S --needed --nocorfim - < packages-repository.txt`
 

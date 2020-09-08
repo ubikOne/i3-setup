@@ -13,9 +13,8 @@ file-roller
 tumbler
 thunar
 thunar-volman
-xfce4-terminal
 lightdm
-lightdm-ebkit2-greeter
+lightdm-webkit2-greeter
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 acpi
@@ -35,8 +34,8 @@ feh
 dunst
 arc-x-icons-theme
 arc-gtk-theme
-galculator
 gtk-engine-murrine
+papirus-icon-theme
 alacritty
 emacs-nox
 neovim
