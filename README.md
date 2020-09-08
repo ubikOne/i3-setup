@@ -1,22 +1,20 @@
-# i3-EndeavourOS
-## joekamprad: setup for i3 under [EndeavourOS](https://endeavouros.com)
+# i3-setup
+## forked from [EndeavourOS](https://endeavouros.com)
 
 # Tutorial for i3-wm settings:
 * background handled by [nitrogen](https://wiki.archlinux.org/index.php/nitrogen)
 * gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
 * Filebrowser = [Thunar](https://docs.xfce.org/xfce/thunar/start)
-* default Terminal-Emulator = [xfce4-terminal](https://docs.xfce.org/apps/terminal/start)
-* Text-Editor = [xed](https://github.com/linuxmint/xed)
+* default Terminal-Emulator = [alacritty](https://github.com/alacritty/alacritty)
+* Text-Editor = [doom emacs](https://github.com/hlissner/doom-emacs)
 
 # Main shortcuts:
 [mod] key is set to the winkey (or should i call it linkey?)
 
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/linkey.png "modkey")
-
-* [mod]+**enter** = open terminal (xfce4-terminal)
+* [mod]+**enter** = open terminal (alacritty)
 * [mod]+**w** =  open Browser (firefox)
 * [mod]+**n** =  open Filebrowser (thunar)
-* **F9** =  app menu (rofi)
+* **$mod+d** =  app menu (rofi)
 * **$mod+c** =  close focused app [kill]
 * **Print**-key = screenshot (scrot)
 
@@ -62,7 +60,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 ----
 
-# Tutorial to install EndeavourOS-i3 setup from scratch 
+# Tutorial to install i3-setup from scratch 
 **for later installs, if you have installed another DE on initial install from the ISO**
 
 1. get the dot files
