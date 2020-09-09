@@ -170,8 +170,8 @@ set $ws10 "10"
 exec --no-startup-id blueberry-tray
 
 #transparency 
-exec --no-startup-id xcompmgr -c
-#exec --no-startup-id picom -cC
+#exec --no-startup-id xcompmgr -c
+exec --no-startup-id picom -dcC
 
 #networkmanager-applet
 exec --no-startup-id nm-applet

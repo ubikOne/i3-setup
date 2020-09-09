@@ -90,3 +90,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 `ln -s ~/.config/bash/bashrc ~/.bashrc`
 `sudo ln -s $HOME/.config/bash/bashrc /root/.bashrc`
 
+# lightdm config
+
+
+

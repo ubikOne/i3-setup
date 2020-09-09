@@ -15,6 +15,7 @@ thunar
 thunar-volman
 lightdm
 lightdm-webkit2-greeter
+lightdm-webkit-theme-aether-git
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 acpi
