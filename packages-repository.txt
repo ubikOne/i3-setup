@@ -50,3 +50,4 @@ bashtop
 flameshot
 visual-studio-code-bin
 polybar-git
+xclip
