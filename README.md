@@ -80,12 +80,11 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 # install needed apps and programms for i3wm:
 
-`yay -S --needed --nocorfim - < packages-repository.txt`
+`yay -S --needed --noconfirm - < packages-repository.txt`
 
 # bashrc config
 
 `mv ~/.bashrc ~/.bashrc_old`
-`sudo mv /root/.bashrc /root/.bashrc_old`
 
 `ln -s ~/.config/bash/bashrc ~/.bashrc`
 `sudo ln -s $HOME/.config/bash/bashrc /root/.bashrc`
