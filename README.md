@@ -97,8 +97,8 @@ It's additional step
 
 `git clone https://aur.archlinux.org/ncurses5-compat-libs.git`
 `cd ncurses5-compat-libs`
-`makepkg -si --skippgpcheck`
-`yay -S -noconfirm matterhorn-bin`
+`makepkg -si --noconfirm`
+`yay -S --noconfirm matterhorn-bin`
 
 In `.config/matterhorn/config.ini` change
 - user
