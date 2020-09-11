@@ -6,7 +6,7 @@
 * gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
 * Filebrowser = [Thunar](https://docs.xfce.org/xfce/thunar/start)
 * default Terminal-Emulator = [alacritty](https://github.com/alacritty/alacritty)
-* Text-Editor = [doom emacs](https://github.com/hlissner/doom-emacs)
+* Text-Editor = [vim](https://www.vim.org/)
 
 # Main shortcuts:
 [mod] key is set to the winkey (or should i call it linkey?)
@@ -114,6 +114,12 @@ In `.config/matterhorn/config.ini` change
 - user
 - pass
 - host
+
+# wallpaper
+
+`sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/`
+
+
 
 # bash & vim 
 
