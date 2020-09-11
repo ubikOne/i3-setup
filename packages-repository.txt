@@ -53,3 +53,5 @@ visual-studio-code-binDbar-git
 xclip
 xautolock
 python-pip
+zathura
+zathura-pdf-mupdf
