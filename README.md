@@ -87,21 +87,35 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 `mv ~/.bashrc ~/.bashrc_old`
 
 `ln -s ~/.config/bash/bashrc ~/.bashrc`
+
 `sudo ln -s $HOME/.config/bash/bashrc /root/.bashrc`
 
 # lightdm config
+
+`sudo cp -R lightdm/lightdm.conf  /etc/lightdm/`
+
+`sudo cp -R lightdm/lightdm-webkit2-greeter.conf  /etc/lightdm/`
+
+`sudo systemctl enable --now lightdm`
 
 # matterhorn
 
 It's additional step
 
 `git clone https://aur.archlinux.org/ncurses5-compat-libs.git`
+
 `cd ncurses5-compat-libs`
+
 `makepkg -si --noconfirm`
+
 `yay -S --noconfirm matterhorn-bin`
 
 In `.config/matterhorn/config.ini` change
 - user
 - pass
 - host
+
+# bash & vim 
+
+`sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"`
 

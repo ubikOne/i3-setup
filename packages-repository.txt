@@ -51,3 +51,5 @@ bashtop
 flameshot
 visual-studio-code-binDbar-git
 xclip
+xautolock
+python-pip
