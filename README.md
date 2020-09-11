@@ -105,15 +105,12 @@ It's additional step
 In `.config/matterhorn/config.ini` change
 - user
 - pass
-- host
+- host (without 'https://' e.g. `mattermost.contact.me`)
 
 # wallpaper
 
 `sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/`
 
-
-
 # bash & vim 
 
 `sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"`
-
