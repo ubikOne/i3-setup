@@ -16,7 +16,7 @@
 * [mod]+**n** =  open Filebrowser (thunar)
 * **$mod+d** =  app menu (rofi)
 * **$mod+c** =  close focused app [kill]
-* **Print**-key = screenshot (scrot)
+* **Print**-key = screenshot (flameshot)
 
 # default i3-wm keycodes: 
 https://i3wm.org/docs/userguide.html#_default_keybindings
