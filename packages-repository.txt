@@ -55,3 +55,4 @@ xautolock
 python-pip
 zathura
 zathura-pdf-mupdf
+ranger
