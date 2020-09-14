@@ -83,6 +83,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 `yay -S --needed --noconfirm - < packages-repository.txt`
 
 # [Ly display manager](https://github.com/nullgemm/ly) install
+![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/ly_display_manager.png)
 
 `git clone https://github.com/nullgemm/ly.git`
 
@@ -100,7 +101,8 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 # matterhorn
 
-It's additional step
+It's additional step!
+[alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/matterhorn.png)
 
 `git clone https://aur.archlinux.org/ncurses5-compat-libs.git`
 
