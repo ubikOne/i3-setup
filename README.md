@@ -127,3 +127,5 @@ In `.config/matterhorn/config.ini` change
 `sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"`
 
 # for non manual installation 
+
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ubikOne/i3-setup/master/install)"`
