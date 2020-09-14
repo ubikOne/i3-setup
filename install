@@ -22,4 +22,4 @@ makepkg -si --noconfirm
 yay -S --noconfirm matterhorn-bin
 
 sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/
-sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)
+sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"
