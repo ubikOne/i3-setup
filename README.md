@@ -101,8 +101,9 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 # matterhorn
 
-It's additional step!
-[alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/matterhorn.png)
+### It's additional step!
+
+![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/matterhorn.png)
 
 `git clone https://aur.archlinux.org/ncurses5-compat-libs.git`
 
