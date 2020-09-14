@@ -49,7 +49,7 @@ thunderbird
 bmon
 bashtop
 flameshot
-visual-studio-code-binDbar-git
+visual-studio-code-bin
 xclip
 xautolock
 python-pip
