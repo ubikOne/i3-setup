@@ -74,6 +74,8 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `cp -R .config/* ~/.config/`
 
+`sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/`
+
 `chmod -R +x ~/.config/i3/scripts` (make scripts executable)
 
 `cp .Xresources ~/` (needed colorcheme for menu)
@@ -109,7 +111,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `cd ncurses5-compat-libs`
 
-`makepkg -si --noconfirm`
+`makepkg -si --skippgpcheck`
 
 `yay -S --noconfirm matterhorn-bin`
 
@@ -117,10 +119,6 @@ In `.config/matterhorn/config.ini` change
 - user
 - pass
 - host (without 'https://' e.g. `mattermost.contact.me`)
-
-# wallpaper
-
-`sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/`
 
 # bash & vim 
 

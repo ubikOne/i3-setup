@@ -171,8 +171,7 @@ set $ws10 "10"
 exec --no-startup-id blueberry-tray
 
 #transparency 
-#exec --no-startup-id xcompmgr -c
-exec --no-startup-id picom -dcC
+exec --no-startup-id picom
 
 #networkmanager-applet
 exec --no-startup-id nm-applet
@@ -436,4 +435,4 @@ exec_always --no-startup-id xautolock -time 5 locker "i3lock-fancy -g -p"
 exec --no-startup-id python ~/.config/i3/i3-swallow.py
 
 bindsym $mod+shift+m exec alacritty -e "matterhorn"
-
+bindsym $mod+shift+n exec alacritty -e "ranger"
