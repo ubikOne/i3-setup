@@ -82,13 +82,21 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `yay -S --needed --noconfirm - < packages-repository.txt`
 
-# lightdm config
+# [Ly display manager](https://github.com/nullgemm/ly) install
 
-`sudo cp -R lightdm/lightdm.conf  /etc/lightdm/`
+`git clone https://github.com/nullgemm/ly.git`
 
-`sudo cp -R lightdm/lightdm-webkit2-greeter.conf  /etc/lightdm/`
+`cd ly`
 
-`sudo systemctl enable --now lightdm`
+`make github`
+
+`make`
+
+`sudo make install`
+
+`sudo systemctl enable ly.service`
+
+`sudo systemctl disable getty@tty2.service`
 
 # matterhorn
 
