@@ -42,6 +42,7 @@ alacritty
 emacs-nox
 neovim
 networkmanager
+nerd-fonts-mononoki
 nerd-fonts-fira-code
 bat
 networkmanager
@@ -57,3 +58,4 @@ zathura
 zathura-pdf-mupdf
 ranger
 vim
+glow
