@@ -1,5 +1,7 @@
 #!/bin/sh
 
+yay
+
 git clone https://github.com/ubikOne/i3-setup.git
 cd i3-setup
 cp -R .config/* ~/.config/
@@ -27,5 +29,4 @@ yay -S --noconfirm matterhorn-bin
 cd ..
 sudo rm -R ncurses5-compat-libs
 
-sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/
 sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"
