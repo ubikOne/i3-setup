@@ -40,7 +40,6 @@ gtk-engine-murrine
 papirus-icon-theme
 alacritty
 emacs-nox
-neovim
 networkmanager
 nerd-fonts-mononoki
 nerd-fonts-fira-code
@@ -59,3 +58,6 @@ zathura-pdf-mupdf
 ranger
 vim
 glow
+pamac-all
+moc
+mc
