@@ -76,6 +76,10 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/`
 
+`mkdir ~/.screensaver`
+
+`cp .wallpapers/dune.jpg ~/.screensaver/`
+
 `chmod -R +x ~/.config/i3/scripts` (make scripts executable)
 
 `cp .Xresources ~/` (needed colorcheme for menu)
@@ -83,6 +87,12 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 # install needed apps and programms for i3wm:
 
 `yay -S --needed --noconfirm - < packages-repository.txt`
+
+# srceenlock
+
+`cp /usr/share/doc/betterlockscreen/examples/betterlockscreenrc ~/.config `
+
+`betterlockscreen -u ~/.screensaver/dune.jpg`
 
 # [Ly display manager](https://github.com/nullgemm/ly) install
 ![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/ly_display_manager.png)

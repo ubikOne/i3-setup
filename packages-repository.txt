@@ -1,7 +1,6 @@
 i3-gaps
 i3blocks
-i3lock
-i3lock-fancy-git
+i3lock-color
 i3status
 network-manager-applet
 arandr
@@ -61,3 +60,4 @@ glow
 pamac-all
 moc
 mc
+betterlockscreen
