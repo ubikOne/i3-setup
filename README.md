@@ -9,14 +9,28 @@
 * Text-Editor = [vim](https://www.vim.org/)
 
 # Main shortcuts:
-[mod] key is set to the winkey (or should i call it linkey?)
+[mod] key is set to the ***superkey/winkey*** (or should i call it linkey?)
 
-* [mod]+**enter** = open terminal (alacritty)
-* [mod]+**w** =  open Browser (firefox)
-* [mod]+**n** =  open Filebrowser (thunar)
-* **$mod+d** =  app menu (rofi)
-* **$mod+c** =  close focused app [kill]
-* **Print**-key = screenshot (flameshot)
+[$mod]+c **kill focused window** ***exit / terminate***
+---
+[$mod]+F1 **open keybindings overview**
+---
+* [mod]+enter    **open terminal** ***(alacritty)***
+* [mod]+w        **open Browser** ***(firefox)***
+* [mod]+n        **open Filebrowser** ***(Thunar)***
+* [mod]+d        **app menu** ***(rofi)***
+* [mod]+o        **chooe open windows over menu** ***(rofi)***
+* [mod]+s        **chooe ssh session** ***(rofi)***
+* [mod]+Shift+d  **app menu** ***(dmenu)***
+* Print-key      **screenshot** ***(flameshot)***
+* [mod]+Shift+m  **mattermost client** ***(matterhorn)***
+* [mod]+Shift+n  **file manger** ***(ranger)***
+* [mod]+Shift+p  **music player** ***(mocp)***
+
+# For more open cheatsheet
+
+[$mod]+F1 **open keybindings overview**
+---
 
 # default i3-wm keycodes: 
 https://i3wm.org/docs/userguide.html#_default_keybindings
@@ -114,8 +128,10 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 # moc
 
 ![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/moc_1.png)
-![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/moc_2.png)!
-[alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/moc_3.png)
+<!-- ![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/moc_2.png)
+![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/moc_3.png) -->
+
+`cp .moc -R ~/.moc`
 
 # matterhorn
 
