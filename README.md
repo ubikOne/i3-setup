@@ -101,6 +101,12 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `sudo systemctl disable getty@tty2.service`
 
+# moc
+
+![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/moc_1.png)
+![alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/moc_2.png)!
+[alt text](https://raw.githubusercontent.com/ubikOne/i3-setup/master/.screenshot/moc_3.png)
+
 # matterhorn
 
 ### It's additional step!
