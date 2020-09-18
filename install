@@ -1,32 +1,65 @@
 #!/bin/sh
 
-yay
+function i3() {
 
-git clone https://github.com/ubikOne/i3-setup.git
-cd i3-setup
-cp -R .config/* ~/.config/
-sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/
-chmod -R +x ~/.config/i3/scripts
-cp .Xresources ~/
-yay -S --needed --noconfirm - < packages-repository.txt
-cd ..
-sudo rm -R i3-setup
+  git clone https://github.com/ubikOne/i3-setup.git
+  cd i3-setup
+  cp -R .config/* ~/.config/
+  sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/
+  cp .wallpapers/dune.jpg ~/.screensaver/
+  chmod -R +x ~/.config/i3/scripts
+  cp .Xresources ~/
+  yay -S --needed --noconfirm - < packages-repository.txt
+  cd ..
+  sudo rm -R i3-setup
 
-git clone https://github.com/nullgemm/ly.git
-cd ly
-make github
-make
-sudo make install
-sudo systemctl enable ly.service
-sudo systemctl disable getty@tty2.service
-cd ..
-sudo rm -R ly
+}
 
-git clone https://aur.archlinux.org/ncurses5-compat-libs.git
-cd ncurses5-compat-libs
-makepkg -si --skippgpcheck
-yay -S --noconfirm matterhorn-bin
-cd ..
-sudo rm -R ncurses5-compat-libs
+function dm() {
 
-sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"
+  git clone https://github.com/nullgemm/ly.git
+  cd ly
+  make github
+  make
+  sudo make install
+  sudo systemctl enable ly.service
+  sudo systemctl disable getty@tty2.service
+  cd ..
+  sudo rm -R ly
+
+}
+
+function lock() {
+
+  cp /usr/share/doc/betterlockscreen/examples/betterlockscreenrc ~/.config
+  betterlockscreen -u ~/.screensaver/dune.jpg
+
+}
+
+function matterhorn() {
+
+  git clone https://aur.archlinux.org/ncurses5-compat-libs.git
+  cd ncurses5-compat-libs
+  makepkg -si --skippgpcheck --noconfirm
+  yay -S --noconfirm matterhorn-bin
+  cd ..
+  sudo rm -R ncurses5-compat-libs
+
+}
+
+function vim() {
+  sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"
+}
+
+function main() {
+
+  yay
+  i3
+  dm
+  lock
+  matterhorn
+  vim
+
+}
+
+main

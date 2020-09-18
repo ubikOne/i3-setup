@@ -104,7 +104,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 # srceenlock
 
-`cp /usr/share/doc/betterlockscreen/examples/betterlockscreenrc ~/.config `
+`cp /usr/share/doc/betterlockscreen/examples/betterlockscreenrc ~/.config`
 
 `betterlockscreen -u ~/.screensaver/dune.jpg`
 
@@ -143,7 +143,7 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `cd ncurses5-compat-libs`
 
-`makepkg -si --skippgpcheck`
+`makepkg -si --skippgpcheck --noconfirm`
 
 `yay -S --noconfirm matterhorn-bin`
 

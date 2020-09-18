@@ -49,7 +49,7 @@ thunar-volman
 thunderbird
 tumbler
 vim
-visual-studio-code-bin
+code
 xautolock
 xclip
 xcursor-neutral
