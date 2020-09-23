@@ -162,6 +162,16 @@ In `.config/matterhorn/config.ini` change
 
 `sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"`
 
+# emacs (DOOM emacs)
+
+`git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d`
+
+`~/.emacs.d/bin/doom -y install`
+
+`cp -R .doom.d/* ~/.doom.d/`
+
+`.emacs.d/bin/doom sync`
+
 # for non manual installation 
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ubikOne/i3-setup/master/install)"`
