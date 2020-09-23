@@ -23,6 +23,8 @@ i3wm Keybindings cheat sheet:
 - `Print-key`     **screenshot** ***flameshot***
 - `$mod+Shift+m`  ***matterhorn***
 - `$mod+Shift+n`  ***ranger***
+- `$mod+Shift+b`  ***bmon***
+- `$mod+Shift+a`  ***alsamixer***
 - `$mod+Shift+p`  **music player** ***mocp***
 
 **window focus**

@@ -445,4 +445,6 @@ exec --no-startup-id python ~/.config/i3/i3-swallow.py
 
 bindsym $mod+shift+m exec alacritty -e "matterhorn"
 bindsym $mod+shift+n exec alacritty -e "ranger"
+bindsym $mod+shift+b exec alacritty -t cheatsheet -e "bmon"
+bindsym $mod+shift+a exec alacritty -t cheatsheet -e "alsamixer"
 bindsym $mod+shift+p exec alacritty -t mocp -e $SHELL -c "mocp -T ~/.moc/themes/nightly_enhanced"

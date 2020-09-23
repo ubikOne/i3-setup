@@ -57,3 +57,5 @@ xdg-user-dirs-gtk
 xed
 zathura
 zathura-pdf-mupdf
+wavemon
+ifstat
