@@ -1,0 +1,21 @@
+#!/bin/bash
+
+super + {_,alt + }t
+      {switch-or-run "([A-Za-z0-9]*)\.Thunderbird" ,_} thunderbird
+
+super + z
+      rofi -modi drun -show drun -line-padding 4 \
+      -columns 2 -padding 50 -hide-scrollbar \
+      -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
+      
+super + shift + m
+      alacritty -e "matterhorn"
+      
+super + alt + r
+      alacritty -t cheatsheet -e "ranger"
+      
+super + shift + n
+      alacritty -t cheatsheet -e "ranger"
+
+control + shift + e
+      ~/.config/i3/scripts/shutdown_menu

@@ -36,7 +36,7 @@ new_window 1pixel
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Mononoki Nerd Font Italic 10 
+font pango:Mononoki Nerd Font 10
 
 # thin borders
 hide_edge_borders both
@@ -209,6 +209,7 @@ for_window [class="Pamac-manager"] floating enable
 
 for_window [title="^cheatsheet$"] floating enable
 for_window [title="^mocp$"] floating enable
+for_window [title="^alsamixer$"] floating enable
 
 #resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
@@ -437,7 +438,6 @@ mode "$mode_gaps_outer" {
 exec --no-startup-id ~/.screenlayout/l.sh 
 exec --no-startup-id flameshot
 exec --no-startup-id pamac-tray-appindicator
-exec --no-startup-id python $HOME/.config/i3/i3-swallow.py
 exec --no-startup-id alacritty -t cheatsheet -e $SHELL -c 'glow -p -w 80 ~/.config/i3/keybindings.md'
 #exec_always --no-startup-id xautolock -time 2 locker "i3lock-fancy -g -p"
 exec_always --no-startup-id xautolock -time 2 locker "betterlockscreen -l dimblur"
@@ -445,6 +445,8 @@ exec --no-startup-id python ~/.config/i3/i3-swallow.py
 
 bindsym $mod+shift+m exec alacritty -e "matterhorn"
 bindsym $mod+shift+n exec alacritty -e "ranger"
-bindsym $mod+shift+b exec alacritty -t cheatsheet -e "bmon"
 bindsym $mod+shift+a exec alacritty -t cheatsheet -e "alsamixer"
+bindsym $mod+shift+b exec alacritty -t cheatsheet -e "bmon"
 bindsym $mod+shift+p exec alacritty -t mocp -e $SHELL -c "mocp -T ~/.moc/themes/nightly_enhanced"
+
+exec autotiling
