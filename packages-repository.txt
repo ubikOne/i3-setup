@@ -9,18 +9,20 @@ bat
 betterlockscreen
 bluez-utils
 bmon
+code
 dunst
 emacs-nox
 feh
 file-roller
 flameshot
 glow
-gtk-engine-murrine
 gtk3-nocsd-git
+gtk-engine-murrine
 i3blocks
 i3-gaps
 i3lock-color
 i3status
+ifstat
 jq
 lxappearance-gtk3
 mc
@@ -49,7 +51,7 @@ thunar-volman
 thunderbird
 tumbler
 vim
-code
+wavemon
 xautolock
 xclip
 xcursor-neutral
@@ -57,5 +59,3 @@ xdg-user-dirs-gtk
 xed
 zathura
 zathura-pdf-mupdf
-wavemon
-ifstat
