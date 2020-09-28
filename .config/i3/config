@@ -206,10 +206,16 @@ for_window [class="qt5ct" instance="qt5ct"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Pamac-manager"] floating enable
+for_window [class="Virt-manager"] floating enable
+
+for_window [title="Keepassx*"] floating enable
+for_window [title="(?i)keepass*"] floating enable
 
 for_window [title="^cheatsheet$"] floating enable
 for_window [title="^mocp$"] floating enable
 for_window [title="^alsamixer$"] floating enable
+for_window [title="^bmon$"] floating enable
+for_window [title="^wavemon$"] floating enable
 
 #resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
@@ -311,19 +317,23 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color       
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    status_command i3blocks -c ~/.config/i3/i3blocks.conf 
-    position bottom
-    colors {
-      separator          #666666
-        background         #222222
-        statusline         #dddddd
-        focused_workspace  #0088CC #0088CC #ffffff
-        active_workspace   #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace   #2f343a #900000 #ffffff
-    }
-}
+
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+#bar {
+#    status_command i3blocks -c ~/.config/i3/i3blocks.conf 
+#    position bottom
+#    colors {
+#      separator          #666666
+#        background         #222222
+#        statusline         #dddddd
+#        focused_workspace  #0088CC #0088CC #ffffff
+#        active_workspace   #333333 #333333 #ffffff
+#        inactive_workspace #333333 #333333 #888888
+#        urgent_workspace   #2f343a #900000 #ffffff
+#    }
+#}
+
 # Multimedia Keys
 
 # volume
@@ -440,13 +450,14 @@ exec --no-startup-id flameshot
 exec --no-startup-id pamac-tray-appindicator
 exec --no-startup-id alacritty -t cheatsheet -e $SHELL -c 'glow -p -w 80 ~/.config/i3/keybindings.md'
 #exec_always --no-startup-id xautolock -time 2 locker "i3lock-fancy -g -p"
-exec_always --no-startup-id xautolock -time 2 locker "betterlockscreen -l dimblur"
+exec_always --no-startup-id xautolock -time 5 -locker "betterlockscreen -l dimblur"
 exec --no-startup-id python ~/.config/i3/i3-swallow.py
 
-bindsym $mod+shift+m exec alacritty -e "matterhorn"
-bindsym $mod+shift+n exec alacritty -e "ranger"
-bindsym $mod+shift+a exec alacritty -t cheatsheet -e "alsamixer"
-bindsym $mod+shift+b exec alacritty -t cheatsheet -e "bmon"
+bindsym $mod+shift+m exec alacritty -t matterhorn -e "matterhorn"
+bindsym $mod+shift+n exec alacritty -t ranger -e "ranger"
+bindsym $mod+shift+a exec alacritty -t alsamixer -e "alsamixer"
+bindsym $mod+shift+b exec alacritty -t bmon -e "bmon"
+bindsym $mod+shift+b exec alacritty -t wavemon -e "wavemon"
 bindsym $mod+shift+p exec alacritty -t mocp -e $SHELL -c "mocp -T ~/.moc/themes/nightly_enhanced"
 
-exec autotiling
+#exec autotiling
