@@ -216,6 +216,7 @@ for_window [title="^mocp$"] floating enable
 for_window [title="^alsamixer$"] floating enable
 for_window [title="^bmon$"] floating enable
 for_window [title="^wavemon$"] floating enable
+for_window [title="^weathern$"] floating enable
 
 #resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
