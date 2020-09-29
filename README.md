@@ -172,6 +172,10 @@ In `.config/matterhorn/config.ini` change
 
 `.emacs.d/bin/doom sync`
 
+# i3 swallow
+
+`pip install i3ipc`
+
 # for non manual installation 
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ubikOne/i3-setup/master/install)"`

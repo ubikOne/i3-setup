@@ -447,7 +447,7 @@ mode "$mode_gaps_outer" {
 }
 
 exec --no-startup-id ~/.screenlayout/l.sh 
-exec --no-startup-id flameshot
+#exec --no-startup-id flameshot
 exec --no-startup-id pamac-tray-appindicator
 exec --no-startup-id alacritty -t cheatsheet -e $SHELL -c 'glow -p -w 80 ~/.config/i3/keybindings.md'
 #exec_always --no-startup-id xautolock -time 2 locker "i3lock-fancy -g -p"
