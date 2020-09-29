@@ -1,4 +1,4 @@
-#  ____ _____ 
+
 # |  _ \_   _|  Derek Taylor (DistroTube)
 # | | | || |    http://www.youtube.com/c/DistroTube
 # | |_| || |    http://www.gitlab.com/dwt1/ 
@@ -1693,8 +1693,8 @@ exec = .config/polybar/scripts/weather.sh
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix-foreground = #fefefe
-click-left= alacritty -d 130 45 -t weather -e $SHELL -c '~/showweather.sh'
-click-right= alacritty -d 75 45 -t weather -e $SHELL -c '~/showweatheralt.sh'
+click-left= alacritty -d 130 45 -t weather -e $SHELL -c '~/.config/polybar/scripts/showweather.sh'
+click-right= alacritty -d 75 45 -t weather -e $SHELL -c '~/.config/polybar/scripts/showweatheralt.sh'
 
 ################################################################################
 
