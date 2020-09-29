@@ -9,6 +9,7 @@ bat
 betterlockscreen
 bluez-utils
 bmon
+caprine
 code
 dunst
 emacs-nox
@@ -24,6 +25,7 @@ i3lock-color
 i3status
 ifstat
 jq
+keepassxc
 lxappearance-gtk3
 mc
 moc
@@ -40,6 +42,7 @@ paprefs
 pavucontrol
 picom
 polkit-gnome
+polybar
 pulseaudio
 python-pip
 ranger
@@ -59,6 +62,5 @@ xdg-user-dirs-gtk
 xed
 zathura
 zathura-pdf-mupdf
-keepassxc
-caprine
-polybar
+zsh
+
