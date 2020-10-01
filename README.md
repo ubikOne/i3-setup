@@ -102,6 +102,10 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 
 `cp .moc -R ~/.moc`
 
+`systemctl --user rnable --now sxhkd.service`
+
+`systemctl --user status sxhkd.service`
+
 # install needed apps and programms for i3wm:
 
 `yay -S --needed --noconfirm - < packages-repository.txt`

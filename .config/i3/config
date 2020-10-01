@@ -462,3 +462,8 @@ bindsym $mod+shift+b exec alacritty -t wavemon -e "wavemon"
 bindsym $mod+shift+p exec alacritty -t mocp -e $SHELL -c "mocp -T ~/.moc/themes/nightly_enhanced"
 
 #exec autotiling
+bmon"
+#bindsym $mod+shift+o exec alacritty -t wavemon -e "wavemon"
+#bindsym $mod+shift+p exec alacritty -t mocp -e $SHELL -c "mocp -T ~/.moc/themes/nightly_enhanced"
+
+#exec autotiling
