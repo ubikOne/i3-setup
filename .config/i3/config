@@ -132,18 +132,36 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 #workspace-edit
+
+#set $m-1 monitor1
+#set $m-2 monitor2
+#set $m-3 monitor3
+
 set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
-set $ws11 "11"
+set $ws2 "2" 
+set $ws3 "3" 
+set $ws4 "4" 
+set $ws5 "5" 
+set $ws6 "6" 
+set $ws7 "7" 
+set $ws8 "8" 
+set $ws9 "9" 
+set $ws10 "10" 
+set $ws11 "11" 
 set $ws12 "12"
+
+#workspace 1 output $m-1 $m-2 $m-3
+#workspace 2 output $m-1 $m-2 $m-3
+#workspace 3 output $m-1 $m-2 $m-3
+#workspace 4 output $m-1 $m-2 $m-3
+#workspace 5 output $m-2 $m-1 $m-3
+#workspace 6 output $m-2 $m-1 $m-3
+#workspace 7 output $m-2 $m-1 $m-3
+#workspace 8 output $m-2 $m-1 $m-3
+#workspace 9 output $m-3 $m-1 $m-2
+#workspace 10 output $m-3 $m-1 $m-2
+#workspace 11 output $m-3 $m-1 $m-2
+#workspace 12 output $m-3 $m-1 $m-2
 
 # switch to workspace
 bindsym $mod+F1 workspace $ws1
@@ -242,6 +260,7 @@ for_window [title="^bmon$"] floating enable
 for_window [title="^wavemon$"] floating enable
 for_window [title="^weather$"] floating enable
 for_window [title="^ranger$"] floating enable
+for_window [title="^bashtop$"] floating enable
 
 #resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
@@ -461,5 +480,5 @@ bindsym $mod+shift+n exec alacritty -t ranger -e "ranger"
 bindsym $mod+shift+a exec alacritty -t alsamixer -e "alsamixer"
 bindsym $mod+shift+b exec alacritty -t bmon -e "bmon"
 bindsym $mod+shift+o exec alacritty -t wavemon -e "wavemon"
+bindsym $mod+shift+t exec alacritty -d 130 45 -t bashtop -e "bashtop"
 bindsym $mod+shift+p exec alacritty -t mocp -e $SHELL -c "mocp -T ~/.moc/themes/nightly_enhanced"
-

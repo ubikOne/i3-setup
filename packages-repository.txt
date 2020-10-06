@@ -20,9 +20,10 @@ glow
 gtk3-nocsd-git
 gtk-engine-murrine
 i3blocks
-i3-gaps
+i3-gaps-next
 i3lock-color
 i3status
+i3-swallow
 ifstat
 jq
 keepassxc
