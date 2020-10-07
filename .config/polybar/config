@@ -127,7 +127,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = mpd
-modules-right = kernel memory2 cpu2 pavolume weather2 date caps num 
+modules-right = kernel ip2 wired-netork memory2 cpu2 pavolume weather2 date caps num 
 
 separator = " "  
 
@@ -1681,7 +1681,16 @@ format-prefix-foreground = #fefefe
 
 ################################################################################
 
-# vim:ft=dosini
+[module/ip2]
+type = custom/script
+format-prefix = ": "
+interval = repeat
+exec = ip -4 addr | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | sed  '1d' | head -1
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+click-left = alacritty -t bmon -e "bmon"
+click-right = alacritty -t wavemon -e "wavemon"
+format-prefix-foreground = #fefefe
 
 ###############################################################
 
