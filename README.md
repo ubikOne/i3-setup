@@ -7,14 +7,15 @@
 * Filebrowser = [Thunar](https://docs.xfce.org/xfce/thunar/start)
 * default Terminal-Emulator = [alacritty](https://github.com/alacritty/alacritty)
 * Text-Editor = [vim](https://www.vim.org/)
+* Text-Editor = [doom emacs](https://github.com/hlissner/doom-emacs)
 
 # Main shortcuts:
-[mod] key is set to the ***superkey/winkey*** (or should i call it linkey?)
+**[mod] key is set to the** ***superkey/winkey***
 
-[$mod]+c **kill focused window** ***exit / terminate***
----
-[$mod]+F1 **open keybindings overview**
----
+**[$mod]+c kill focused window** ***exit / terminate***
+
+**[$mod]+F1 open keybindings overview**
+
 * [mod]+enter    **open terminal** ***(alacritty)***
 * [mod]+w        **open Browser** ***(firefox)***
 * [mod]+n        **open Filebrowser** ***(Thunar)***
@@ -27,50 +28,11 @@
 * [mod]+Shift+n  **file manger** ***(ranger)***
 * [mod]+Shift+p  **music player** ***(mocp)***
 
+or check [here](https://github.com/ubikOne/i3-setup/blob/master/.config/i3/keybindings.md)
+
 # For more open cheatsheet
 
-[$mod]+F1 **open keybindings overview**
----
-
-# default i3-wm keycodes: 
-https://i3wm.org/docs/userguide.html#_default_keybindings
-
-# Tiling:
-is set to default for i3wm and can be changed to: 
-* stacking:
-Only the focused window in the container is displayed. You get a list of windows at the top of the container.
-
-* tabbed:
-so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
-[mod]+**Left** focus left (left arrow key)
-[mod]+**Right** focus right (right arrow key)
-
-# i3blocks:
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/bar.png "i3blocks")
-* pulseaudio (mousewheel volume level, rightclick open pulseaudio control)
-* weather (openweather you need to get city code and apikey first [adding it to ~/.config/i3/scripts/openweather.sh])
-get your api key here: https://openweathermap.org/appid and City code: https://openweathermap.org/find?q= (search your city     and take the city code from the url in your browser [7 numbers at the end of the url])
-* tray-icons (showing network-manager and update-icon)
-* logout button (poweroff, logout, suspending, hibernate e.t.c.)
-
-# Logout Menu:
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/logoutmenu.png "logout-menu")
-* CONFIG FILE = ~/.config/i3/i3blocks.conf
-# application menu (rofi):
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/menu.png "application-menu")
-* color scheme = ~/.Xresources
-
-# Notifications are done with dunst:
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/dunst-i3-enOS.png "dunst-notification")
-* CONFIG FILE = ~/.config/dunst/dunstrc
-
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/endeavouros-i3-screenshot.png "i3-running")
-
-login to i3.
-
-# If you need to change something to fit your needs start at the full wiki at EndeavourOS wiki page:
-
-https://endeavouros.com/docs/window-tiling-managers/i3-wm/
+***alt+F1*** **open keybindings overview**
 
 ----
 
@@ -83,29 +45,19 @@ https://endeavouros.com/docs/window-tiling-managers/i3-wm/
 4. install needed packages
 
 `git clone https://github.com/ubikOne/i3-setup.git`
-
 `cd i3-setup`
-
 `cp -R .config/* ~/.config/`
-
 `sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/`
-
 `mkdir ~/.screensaver`
-
 `cp .wallpapers/dune.jpg ~/.screensaver/`
-
-`chmod -R +x ~/.config/i3/scripts` (make scripts executable)
-
-`cp .Xresources ~/` (needed colorcheme for menu)
-
+`chmod -R +x ~/.config/i3/scripts`
+`cp .Xresources ~/`
 `cp .gtkrc-2.0 ~/`
-
 `cp .moc -R ~/.moc`
 
 # install needed apps and programms for i3wm:
 
 `yay -S --needed --noconfirm - < packages-repository.txt`
-
 `cd ..`
 
 # srceenlock
