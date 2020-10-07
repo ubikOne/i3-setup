@@ -134,6 +134,11 @@ i3wm Keybindings cheat sheet:
 - `super+alt+shift+left` **move container to** ***prevoius*** **workspace**
 - `super+alt+ctrl+left` **move container to** ***prevoius*** **workspace and focus**
 
+**scratchpad**
+
+- `super+m` **move container to** ***scratchpad***
+- `super+alt+m` **show container in** ***scratchpad***
+
 **reload the configuration file**
 
 - `super+shift+c` **reload**
