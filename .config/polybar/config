@@ -118,8 +118,6 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 
-locale = pl_PL.UTF-8
-
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "UbuntuMono Nerd Font:size=10;2"
 font-1 = "UbuntuMono Nerd Font:size=16;3"
@@ -129,7 +127,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = mpd
-modules-right = kernel ip2 wired-netork memory2 cpu2 pavolume weather2 date caps num 
+modules-right = kernel ip2 wired-netork memory2 cpu2 pavolume weather2 date caps num scroll 
 
 separator = " "  
 
@@ -1677,6 +1675,16 @@ format-prefix-foreground = #fefefe
 type = custom/script
 interval = repeat
 exec = .config/i3/scripts/num.sh
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-prefix-foreground = #fefefe
+
+################################################################################
+
+[module/scroll]
+type = custom/script
+interval = repeat
+exec = .config/i3/scripts/scroll.sh
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix-foreground = #fefefe
