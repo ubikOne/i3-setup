@@ -118,6 +118,8 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 
+locale = pl_PL.UTF-8
+
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "UbuntuMono Nerd Font:size=10;2"
 font-1 = "UbuntuMono Nerd Font:size=16;3"

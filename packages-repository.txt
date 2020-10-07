@@ -36,6 +36,7 @@ nerd-fonts-ubuntu-mono
 networkmanager
 network-manager-applet
 nitrogen
+numlockx
 otf-font-awesome
 pamac-all
 papirus-icon-theme
