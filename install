@@ -73,6 +73,7 @@ function main() {
   lock
   matterhorn
   vim
+  emacs
 
 }
 
