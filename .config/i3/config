@@ -469,9 +469,9 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec --no-startup-id ~/.screenlayout/l.sh 
+exec --no-startup-id ~/.screenlayout/l.sh
 exec --no-startup-id flameshot
-exec --no-startup-id pamac-tray-appindicator
+exec --no-startup-id keepassx
 exec --no-startup-id alacritty -d 120 40 -t cheatsheet -e $SHELL -c 'glow -p -w 80 ~/.config/i3/keybindings.md'
 exec_always --no-startup-id xautolock -time 5 -locker "betterlockscreen -l dimblur"
 exec_always --no-startup-id betterlockscreen -u ~/.screensaver/dune.jpg
