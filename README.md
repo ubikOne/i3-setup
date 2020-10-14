@@ -12,7 +12,10 @@
 * Text-Editor = [doom emacs](https://github.com/hlissner/doom-emacs)
 
 ## Main shortcuts
+<<<<<<< HEAD
+=======
 
+>>>>>>> 6700e33dd62a04f7142b8c4a2e8d91e0da03f7df
 **super+c kill focused window** ***exit / terminate***
 
 ### alt+F1 open keybindings overview
