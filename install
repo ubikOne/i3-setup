@@ -1,6 +1,6 @@
 #!/bin/sh
 
-function i3() {
+i3() {
 
   git clone https://github.com/ubikOne/i3-setup.git eos-i3
   cd eos-i3
@@ -17,7 +17,7 @@ function i3() {
   
 }
 
-function dm() {
+dm() {
 
   git clone https://github.com/nullgemm/ly.git
   cd ly
@@ -31,7 +31,7 @@ function dm() {
 
 }
 
-function emacs() {
+emacs() {
 
   git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
   ~/.emacs.d/bin/doom -y install
@@ -40,14 +40,14 @@ function emacs() {
 
 }
 
-function lock() {
+lock() {
 
   cp /usr/share/doc/betterlockscreen/examples/betterlockscreenrc ~/.config
 #  betterlockscreen -u ~/.screensaver/dune.jpg
 
 }
 
-function matterhorn() {
+matterhorn() {
 
   git clone https://aur.archlinux.org/ncurses5-compat-libs.git
   cd ncurses5-compat-libs
@@ -58,11 +58,11 @@ function matterhorn() {
 
 }
 
-function vim() {
+vim() {
   sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"
 }
 
-function main() {
+main() {
 
   cd ~/.config
 

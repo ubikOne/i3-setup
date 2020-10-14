@@ -1,7 +1,9 @@
 # i3-setup
+
 ## forked from [EndeavourOS](https://endeavouros.com)
 
-# Tutorial for i3-wm settings:
+## Tutorial for i3-wm settings
+
 * background handled by [nitrogen](https://wiki.archlinux.org/index.php/nitrogen)
 * gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
 * Filebrowser = [Thunar](https://docs.xfce.org/xfce/thunar/start)
@@ -9,11 +11,11 @@
 * Text-Editor = [vim](https://www.vim.org/)
 * Text-Editor = [doom emacs](https://github.com/hlissner/doom-emacs)
 
-## Main shortcuts:
+## Main shortcuts
 
 **super+c kill focused window** ***exit / terminate***
 
-**super+F1 open keybindings overview**
+### alt+F1 open keybindings overview
 
 * super+enter      **open terminal** ***(alacritty)***
 * super+w          **open Browser** ***(firefox)***
@@ -47,7 +49,8 @@ cp .Xresources ~/
 cp .gtkrc-2.0 ~/
 cp .moc -R ~/.moc
 ```
-### install needed apps and programms for i3wm:
+
+### install needed apps and programms for i3wm
 
 ```bash
 yay -S --needed --noconfirm - < packages-repository.txt
@@ -89,11 +92,12 @@ yay -S --noconfirm matterhorn-bin
 ```
 
 **In `.config/matterhorn/config.ini` change**
-- user
-- pass
-- host (without 'https://' e.g. `mattermost.contact.me`)
 
-### bash & vim 
+* user
+* pass
+* host (without 'https://' e.g. `mattermost.contact.me`)
+
+### bash & vim
 
 ```bash
 sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"
@@ -114,7 +118,7 @@ cp -R .doom.d/* ~/.doom.d/
 pip install i3ipc
 ```
 
-## for "automatic" installation 
+## for "automatic" installation
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ubikOne/i3-setup/master/install)"
