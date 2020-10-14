@@ -1,9 +1,9 @@
 #!/bin/sh
 
-function i3() {
+i3() {
 
-  git clone https://github.com/ubikOne/i3-setup.git
-  cd i3-setup
+  git clone https://github.com/ubikOne/i3-setup.git eos-i3
+  cd eos-i3
   cp -R .config/* ~/.config/
   sudo cp .wallpapers/dune.jpg /usr/share/endeavouros/backgrounds/
   mkdir ~/.screensaver
@@ -14,11 +14,10 @@ function i3() {
   cp .moc -R ~/.moc
   yay -S --needed --noconfirm - < packages-repository.txt
   cd ..
-  sudo rm -R i3-setup/
   
 }
 
-function dm() {
+dm() {
 
   git clone https://github.com/nullgemm/ly.git
   cd ly
@@ -32,14 +31,23 @@ function dm() {
 
 }
 
-function lock() {
+emacs() {
 
-  cp /usr/share/doc/betterlockscreen/examples/betterlockscreenrc ~/.config
-  betterlockscreen -u ~/.screensaver/dune.jpg
+  git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+  ~/.emacs.d/bin/doom -y install
+  cp -R .doom.d/* ~/.doom.d/
+  .emacs.d/bin/doom sync
 
 }
 
-function matterhorn() {
+lock() {
+
+  cp /usr/share/doc/betterlockscreen/examples/betterlockscreenrc ~/.config
+#  betterlockscreen -u ~/.screensaver/dune.jpg
+
+}
+
+matterhorn() {
 
   git clone https://aur.archlinux.org/ncurses5-compat-libs.git
   cd ncurses5-compat-libs
@@ -50,18 +58,22 @@ function matterhorn() {
 
 }
 
-function vim() {
+vim() {
   sh -c "$(curl -fsSL https://gitlab.com/ubikOne/vim-config/raw/master/install)"
 }
 
-function main() {
+main() {
 
-  yay
+  cd ~/.config
+
+  yay --noconfirm
   i3
+  pip install i3ipc
   dm
   lock
   matterhorn
   vim
+  emacs
 
 }
 

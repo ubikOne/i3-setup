@@ -1,6 +1,6 @@
 #!/bin/bash
 
-caps=`xset -q | grep Num | awk '{ print $8 }'`
+caps=$(xset -q | grep Num | awk '{ print $8 }')
 
 if [ $caps == 'off' ]; then
   echo "n"

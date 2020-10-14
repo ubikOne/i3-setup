@@ -474,6 +474,7 @@ exec --no-startup-id flameshot
 exec --no-startup-id pamac-tray-appindicator
 exec --no-startup-id alacritty -d 120 40 -t cheatsheet -e $SHELL -c 'glow -p -w 80 ~/.config/i3/keybindings.md'
 exec_always --no-startup-id xautolock -time 5 -locker "betterlockscreen -l dimblur"
+exec_always --no-startup-id betterlockscreen -u ~/.screensaver/dune.jpg
 exec_always --no-startup-id numlockx on
 exec --no-startup-id python3 ~/.config/i3/i3-swallow.py
 exec --no-startup-id i3-swallow
