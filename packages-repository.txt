@@ -46,6 +46,7 @@ picom
 polkit-gnome
 polybar
 pulseaudio
+pulsemixer
 python-pip
 ranger
 rofi

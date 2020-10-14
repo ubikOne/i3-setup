@@ -481,7 +481,7 @@ exec --no-startup-id i3-swallow
 bindsym $mod+l exec betterlockscreen -l dimblur
 bindsym $mod+shift+m exec alacritty -t matterhorn -e "matterhorn"
 bindsym $mod+shift+n exec alacritty -t ranger -e "ranger"
-bindsym $mod+shift+a exec alacritty -t alsamixer -e "alsamixer"
+bindsym $mod+shift+a exec alacritty -t alsamixer -e "pulsemixer"
 bindsym $mod+shift+b exec alacritty -t bmon -e "bmon"
 bindsym $mod+shift+o exec alacritty -t wavemon -e "wavemon"
 bindsym $mod+shift+t exec alacritty -d 130 45 -t bashtop -e "bashtop"

@@ -9,8 +9,7 @@
 * Text-Editor = [vim](https://www.vim.org/)
 * Text-Editor = [doom emacs](https://github.com/hlissner/doom-emacs)
 
-## Main shortcuts:
-
+## Main shortcuts
 **super+c kill focused window** ***exit / terminate***
 
 **super+F1 open keybindings overview**
