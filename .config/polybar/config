@@ -102,7 +102,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = mpd
-modules-right =  ip2 wired-netork pavolume weather2 user update date caps num scroll 
+modules-right =  ip2 networkspeedup networkspeeddown wired-netork user weather2 volume date caps num scroll 
 
 separator = " "  
 
@@ -942,11 +942,11 @@ bar-volume-foreground-4 = #40ad4b
 bar-volume-foreground-5 = #40ad4b
 bar-volume-foreground-6 = #40ad4b
 bar-volume-gradient = false
-bar-volume-indicator = 
+bar-volume-indicator = █
 bar-volume-indicator-font = 2
-bar-volume-fill = 
+bar-volume-fill = █
 bar-volume-fill-font = 2
-bar-volume-empty = 
+bar-volume-empty = █
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground}
 format-volume-foreground = ${colors.foreground}
